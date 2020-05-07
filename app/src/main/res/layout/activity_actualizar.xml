@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ActualizarActivity">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Actualizacion de datos personales:"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textSize="20sp"/>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Cedula"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:id="@+id/cedulaa"/>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Nombres"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:id="@+id/nombresa"/>
+
+
+    <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/estratos"
+            android:layout_margin="10dp"
+            android:id="@+id/estratoa" android:spinnerMode="dialog"/>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/salarioa"
+            android:layout_margin="10dp"
+            android:hint="Salario"/>
+
+    <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/niveledu"
+            android:layout_margin="10dp"
+            android:id="@+id/niveleda" android:spinnerMode="dialog"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/actualizar1"
+            android:text="actualizar"/>
+
+</LinearLayout>
